@@ -142,7 +142,7 @@ async function main() {
   const command = args[0];
 
   // If a course ID is provided as argument, fetch assignments for that course
-  if (command && !isNaN(command)) {
+  if (command && !isNaN(command)) { //check if there is a command and if its a course ID
     const courseId = parseInt(command);
     await listAssignments(courseId);
   } else {
